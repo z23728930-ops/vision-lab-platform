@@ -1,0 +1,18 @@
+[Unit]
+Description=Vision Lab Platform API
+After=network.target mysql.service
+Wants=mysql.service
+
+[Service]
+Type=simple
+User=visionlab
+Group=visionlab
+WorkingDirectory=/opt/vision-lab-platform/backend
+EnvironmentFile=/opt/vision-lab-platform/backend/.env
+ExecStart=/opt/vision-lab-platform/backend/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8001
+Restart=always
+RestartSec=5
+UMask=0027
+
+[Install]
+WantedBy=multi-user.target
