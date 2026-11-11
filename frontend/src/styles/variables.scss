@@ -1,0 +1,78 @@
+/* Taste-skill guided design tokens
+ * Project: 工业视觉智能质检平台
+ * Design Read: B2B industrial SaaS for technical/training users, with a blue-white tech language, leaning toward Element Plus + SCSS + refined motion.
+ * Dials: VARIANCE 6, MOTION 5, DENSITY 5
+ */
+
+:root {
+  /* Brand colors */
+  --color-primary:        #1e6fff;
+  --color-primary-hover:  #1558d6;
+  --color-primary-light:   #3d86ff;
+  --color-primary-subtle:  #e8f1ff;
+
+  /* Navy scale (no pure black) */
+  --color-navy-deep:  #0b1f35;
+  --color-navy:      #0f2a44;
+  --color-navy-soft: #1a3558;
+
+  /* Backgrounds */
+  --color-bg:        #f0f6ff;
+  --color-surface:   #ffffff;
+  --color-surface-2: #f7faff;
+
+  /* Text */
+  --color-text:      #0f2a44;
+  --color-text-2:    #4a607a;
+  --color-text-muted:#6b7c93;
+  --color-text-inv:  #ffffff;
+
+  /* Borders */
+  --color-border:    rgba(30, 111, 255, 0.14);
+  --color-border-2:  rgba(15, 42, 68, 0.08);
+
+  /* Shadows (tinted to background hue) */
+  --shadow-card: 0 2px 12px rgba(15, 42, 68, 0.07);
+  --shadow-md:   0 8px 24px rgba(15, 42, 68, 0.10);
+  --shadow-lg:   0 16px 40px rgba(15, 42, 68, 0.14);
+  --shadow-hover: 0 20px 48px rgba(30, 111, 255, 0.18);
+  --shadow-navy:  0 20px 48px rgba(15, 42, 68, 0.22);
+
+  /* Radius scale */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  /* Spacing */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* Typography */
+  --font-sans: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Element Plus overrides */
+  --el-color-primary:         #1e6fff;
+  --el-color-primary-light-3: #5b94ff;
+  --el-color-primary-light-5: #8bb2ff;
+  --el-color-primary-light-7: #bdd4ff;
+  --el-color-primary-light-8: #d6eaff;
+  --el-color-primary-light-9: #eef5ff;
+  --el-color-primary-dark-2:  #1558d6;
+  --el-color-success:         #2f9e6b;
+  --el-color-warning:         #e6a23c;
+  --el-color-danger:          #e85d5d;
+  --el-color-info:            #5b7c9e;
+  --el-border-radius-base:    var(--radius-md);
+  --el-border-radius-small:   var(--radius-sm);
+}

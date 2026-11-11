@@ -1,0 +1,47 @@
+# PyCharm specific files and project settings
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/ # If you ever use VS Code for this project
+
+# Python specific files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv
+venv/ # Virtual environment directory (common name)
+env/  # Another common virtual environment name
+.env/ # For dotenv environment variables (like your DATABASE_URL, SECRET_KEY)
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+logs/ # If you have a dedicated logs directory
+
+# Database files
+*.sqlite3 # If you're using SQLite
+*.db      # Generic database file
+alembic/versions/ # Alembic migration history (if you use Alembic)
+
+# Uploaded files and inference results (from your app/core/config.py settings)
+uploads/
+static_uploads/ # As mounted in main.py
+inference_results/ # As used in inference_runner.py
+.env
+test.py
+# OS generated files
+.DS_Store # macOS
+Thumbs.db # Windows
+ehthumbs.db # Windows
+Desktop.ini # Windows
+
+# Jupyter Notebook files (if you use them for data exploration/ML)
+.ipynb_checkpoints/
